@@ -1,12 +1,12 @@
 import { useContext } from 'react';
 import {
-    Alert,
-    Image,
-    ScrollView,
-    StyleSheet,
-    Text,
-    TouchableOpacity,
-    View,
+  Alert,
+  Image,
+  ScrollView,
+  StyleSheet,
+  Text,
+  TouchableOpacity,
+  View,
 } from 'react-native';
 import { AuthContext } from '../context/AuthContext';
 import { COLORS, FONTS } from '../utils/globalStyles';

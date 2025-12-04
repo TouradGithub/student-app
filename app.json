@@ -24,6 +24,21 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/icon.png",
+          "color": "#ffffff"
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "a5fc8590-8361-4ce7-9914-9cf94b9efc14"
+      }
+    },
+    "owner": "tourad"
   }
 }

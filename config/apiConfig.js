@@ -9,7 +9,7 @@
 // للإنتاج (Production):
 // export const API_BASE_URL = 'https://your-domain.com';
 
-export const API_BASE_URL = 'http://172.20.10.4:8000/api'; // عنوان السيرفر الحالي
+export const API_BASE_URL = 'http://172.20.10.5:8000/api'; // عنوان السيرفر الحالي
 
 export const API_ENDPOINTS = {
   STUDENT_LOGIN: `${API_BASE_URL}/student/login`,

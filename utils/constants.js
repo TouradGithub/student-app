@@ -3,18 +3,18 @@ import { Dimensions } from 'react-native';
 const { width, height } = Dimensions.get('window');
 
 //  const BASE_URL=  'http://192.168.100.41:8000/api/auth';
- const BASE_URL=  'https://rimshoop.com/api/auth';
+ const BASE_URL=  'http://172.20.10.5:8000/api/auth';
 //  const BASE_URL_WITH_V1=  'http://172.20.10.4:8000/api/v1';
- const BASE_URL_WITH_V1=  'https://rimshoop.com/api/v1';
+ const BASE_URL_WITH_V1=  'http://172.20.10.5:8000/api/v1';
 
 export const API = {
   // IMAGE_URL: 'http://192.168.100.41:8000/',
 
   // BASE_URL: 'http://192.168.100.41:8000',
   // AUTH_BASE_URL: 'http://192.168.100.41:8000/api/auth',
-  IMAGE_URL: 'https://rimshoop.com/',
-  BASE_URL: 'https://rimshoop.com',
-  AUTH_BASE_URL: 'https://rimshoop.com/api/auth',
+  IMAGE_URL: 'http://172.20.10.5:8000/',
+  BASE_URL: 'http://172.20.10.5:8000',
+  AUTH_BASE_URL: 'http://172.20.10.5:8000/api/auth',
   PRODUCTS_ENDPOINT: `${BASE_URL}/products`,
   PRODUCTS_SEARCH: `${BASE_URL}/search-products`,
   UPDATE_PROFILE_ENDPOINT: `${BASE_URL_WITH_V1}/update-profile`,

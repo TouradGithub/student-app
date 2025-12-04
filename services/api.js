@@ -127,3 +127,26 @@ export const isLoggedIn = async () => {
   const token = await getToken();
   return !!token;
 };
+
+// Save Expo Push Token to server
+export const savePushToken = async (expoPushToken) => {
+  try {
+    const response = await apiCall('/push-token', 'POST', { expo_push_token: expoPushToken });
+    console.log('Push token saved to server:', response);
+    return response;
+  } catch (error) {
+    console.error('Error saving push token:', error);
+    throw error;
+  }
+};
+
+// Update notification settings
+export const updateNotificationSettings = async (enabled) => {
+  try {
+    const response = await apiCall('/notifications/settings', 'POST', { notifications_enabled: enabled });
+    return response;
+  } catch (error) {
+    console.error('Error updating notification settings:', error);
+    throw error;
+  }
+};
